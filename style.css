@@ -10,3 +10,75 @@ body {
 }
 
 /* Add styles here! */
+
+:root {
+  /* Fonts */
+  --ff: 'Lato', sans-serif;
+
+  /* Colors */
+  --clr-primary-green: hsl(160deg, 100%, 30%);
+
+  --clr-secondary-gold-light: hsl(45deg, 100%, 50%);
+  --clr-secondary-gold-dark: hsl(45deg, 100%, 40%);
+
+  --clr-grays-black: hsl(0deg, 0%, 0%);
+  --clr-grays-very-dark: hsl(0deg, 0%, 10%);
+  --clr-grays-dark: hsl(0deg, 0%, 30%);
+  --clr-grays-medium: hsl(0deg, 0%, 40%);
+  --clr-grays-light: hsl(0deg, 0%, 60%);
+  --clr-grays-white: hsl(0deg, 0%, 100%);
+}
+
+strong {
+  color: var(--clr-primary-green);
+}
+
+p {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.intro-chunk {
+  max-width: 415px;
+  margin-bottom: 64px;
+}
+
+.title {
+  margin-top: 96px;
+  margin-bottom: 48px;
+}
+
+main {
+  background-color: var(--clr-grays-medium);
+  border-top: 8px solid var(--clr-grays-light);
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+main > .max-width-wrapper {
+  background-color: white;
+  border-bottom: 8px solid var(--clr-grays-light);
+}
+
+.card {
+  background-color: var(--clr-grays-white);
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+
+.indented-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  margin-left: -32px;
+  padding: 16px 32px;
+  background-color: var(--clr-secondary-gold-light);
+  border-bottom: 8px solid var(--clr-secondary-gold-dark);
+  width: fit-content;
+}
+
+/* Utility */
+.max-width-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
